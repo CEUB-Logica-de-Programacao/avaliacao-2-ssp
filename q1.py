@@ -18,7 +18,7 @@
 # Input: names = ["Alice","Bob","Bob"], heights = [155,185,150]
 # Output: ["Bob","Alice","Bob"]
 # ```
-def q2(n):
+
     lis_nome=[]
     lis_altura=[]
     while True:
