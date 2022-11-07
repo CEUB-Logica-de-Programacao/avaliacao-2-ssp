@@ -25,8 +25,6 @@
 
 
 def q2(n):
-	degraus = int(input('Coloque o número de degraus:'))
-
 	def fib(n):
 		if n <= 1:
 			return n
