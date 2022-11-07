@@ -19,24 +19,18 @@
 # Output: ["Bob","Alice","Bob"]
 # ```
 
-    lis_nome=[]
-    lis_altura=[]
-    while True:
-        print("adicionar pesso--1")
-        print('finalisar ---2')
-        x=int(input('resposta'))
-        if x==2:
-            break
-        nome=str(input('nome: '))
-        altura=float(input('altura: '))
-        lis_nome.append(nome)
-        lis_altura.append(altura)
+def q1(names, heights):
+    lista = []
+    listacerta = []
+    x = 0
+    for i in names:
+        lista.append([i,heights[x]])
+        x += 1
+    lista=sorted(lista, key=lambda item: item[1], reverse=True)
+    for i in range(len(lista)):
+        listacerta.append(lista[i][0])
+    return listacerta
+        
 
-    for j in range(len(lis_altura)):
-        for i in range(j+1,len(lis_altura)):
-            if lis_altura[j]<lis_altura[i]:
-                lis_nome[i],lis_nome[j]=lis_nome[j],lis_nome[i]
-    print(lis_nome)
 
 if __name__ == '__main__':
-    print(q1(["Mary", "John", "Emma"], [180, 165, 170]))
