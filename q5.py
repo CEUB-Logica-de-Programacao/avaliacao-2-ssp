@@ -31,7 +31,6 @@ def q5(paths):
             if paths[i][1] not in ComSaida:
                 SemSaida.append(paths[i][1])
     return SemSaida[0]
-    pass
 
 
 if __name__ == '__main__':
