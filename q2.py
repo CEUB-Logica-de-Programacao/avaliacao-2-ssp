@@ -25,7 +25,18 @@
 
 
 def q2(n):
-    # Escreva seu código aqui
+degraus = int(input('Coloque o número de degraus:'))
+
+def fib(n):
+	if n <= 1:
+		return n
+	return fib(n-1) + fib(n-2)
+
+def maneiras(s):
+	return fib(s + 1)
+
+s = 4
+print(f"Números de formas de chegar ao topo = {maneiras(s)}",)
     pass
 
 
