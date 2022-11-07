@@ -23,7 +23,14 @@
 # ```
 
 def q5(paths):
-    # Escreva seu código aqui
+    ComSaida = []
+        SemSaida = []
+        for i, x in enumerate(paths):
+            ComSaida.append(paths[i][0])
+        for i, x in enumerate(paths):
+            if paths[i][1] not in ComSaida:
+                SemSaida.append(paths[i][1])
+        return SemSaida[0]
     pass
 
 
