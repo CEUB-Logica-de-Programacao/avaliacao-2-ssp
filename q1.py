@@ -19,7 +19,7 @@
 # Output: ["Bob","Alice","Bob"]
 # ```
 
-    sic={}
+    
     lis_nome=[]
 
     lis_altura=[]
