@@ -35,7 +35,7 @@ def q2(n):
 
 	s = 4
 	return maneiras
-    	pass
+    	
 
 
 if __name__ == '__main__':
