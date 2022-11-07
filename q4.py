@@ -36,7 +36,7 @@ def q4(numeral):
        return val_int
    A = input('digite o número romano: ')
    print(solução().romanointeiro(A))
-        pass
+        
 
 
 if __name__ == '__main__':
