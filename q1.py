@@ -18,25 +18,25 @@
 # Input: names = ["Alice","Bob","Bob"], heights = [155,185,150]
 # Output: ["Bob","Alice","Bob"]
 # ```
+def q2(n):
+    lis_nome=[]
+    lis_altura=[]
+    while True:
+        print("adicionar pesso--1")
+        print('finalisar ---2')
+        x=int(input('resposta'))
+        if x==2:
+            break
+        nome=str(input('nome: '))
+        altura=float(input('altura: '))
+        lis_nome.append(nome)
+        lis_altura.append(altura)
 
-lis_nome=[]
-lis_altura=[]
-while True:
-    print("adicionar pesso--1")
-    print('finalisar ---2')
-    x=int(input('resposta'))
-    if x==2:
-        break
-    nome=str(input('nome: '))
-    altura=float(input('altura: '))
-    lis_nome.append(nome)
-    lis_altura.append(altura)
-    
-for j in range(len(lis_altura)):
-    for i in range(j+1,len(lis_altura)):
-        if lis_altura[j]<lis_altura[i]:
-            lis_nome[i],lis_nome[j]=lis_nome[j],lis_nome[i]
-print(lis_nome)
+    for j in range(len(lis_altura)):
+        for i in range(j+1,len(lis_altura)):
+            if lis_altura[j]<lis_altura[i]:
+                lis_nome[i],lis_nome[j]=lis_nome[j],lis_nome[i]
+    print(lis_nome)
 
 if __name__ == '__main__':
     print(q1(["Mary", "John", "Emma"], [180, 165, 170]))
