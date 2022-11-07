@@ -30,7 +30,7 @@ def q5(paths):
         for i, x in enumerate(paths):
             if paths[i][1] not in ComS:
                 SemS.append(paths[i][1])
-        return SemS[0]
+    return SemS[0]
 
 
 if __name__ == '__main__':
