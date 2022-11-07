@@ -30,7 +30,6 @@ def q1(names, heights):
     for i in range(len(lista)):
         listacerta.append(lista[i][0])
     return listacerta
-    pass
 
 
 if __name__ == '__main__':
