@@ -34,3 +34,4 @@ def q1(names, heights):
 
 
 if __name__ == '__main__':
+    pass
