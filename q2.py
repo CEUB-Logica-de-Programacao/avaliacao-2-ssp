@@ -27,14 +27,14 @@
 def q2(n):
 	def fib(n):
 		if n <= 1:
-			return n
+		return n
 		return fib(n-1) + fib(n-2)
 
 	def maneiras(s):
 		return fib(s + 1)
 
 	s = 4
-	print(f"Números de formas de chegar ao topo = {maneiras(s)}",)
+	return maneiras
     	pass
 
 
