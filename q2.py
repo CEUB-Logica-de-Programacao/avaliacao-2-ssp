@@ -25,9 +25,17 @@
 
 
 def q2(n):
-    # Escreva seu código aqui
-    pass
+	def fib(n):
+		if n <= 1:
+			return n
+			return fib(n-1) + fib(n-2)
 
+	def maneiras(s):
+		return fib(s + 1)
+
+	s = 4
+	return maneiras
+    	
 
 if __name__ == '__main__':
     print(q2(2))

@@ -22,7 +22,25 @@
 # ```
 
 def q3(prices):
-    # Escreva seu código aqui
+    lista = []
+    menor = 50
+    ind = 0 
+    x = 0 
+    while x < len(prices):
+        if prices[x] < menor:
+            menor = prices[x]
+            ind = x 
+        x +=1 
+    y = ind 
+    i = len(prices)
+    i-= ind 
+    for x in range(i):
+        lista.append(prices[y])
+        y += 1 
+    lista = sorted(lista)
+    x=len(lista)
+    maior = lista[x-1] - lista[0]
+    return maior
     pass
 
 
