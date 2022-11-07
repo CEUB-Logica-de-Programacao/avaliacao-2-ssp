@@ -37,6 +37,5 @@ def q2(n):
 	return maneiras
     	
 
-
 if __name__ == '__main__':
     print(q2(2))
