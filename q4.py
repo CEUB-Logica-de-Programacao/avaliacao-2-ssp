@@ -25,17 +25,26 @@
 # Dado um numeral romano, converta-o para um número inteiro.
 
 def q4(numeral):
-   def romanointeiro(self, s):
-       val_rom = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-       val_int = 0
-       for i in range(len(s)):
-           if i > 0 and val_rom[s[i]] > val_rom[s[i - 1]]:
-               val_int += val_rom[s[i]] - 2 * val_rom[s[i - 1]]
-           else:
-               val_int += val_rom[s[i]]
-       return val_int
-   A = input('digite o número romano: ')
-   print(solução().romanointeiro(A))
+   mapa = {
+       "I": 1, 
+       "V": 5, 
+       "X": 10, 
+       "L": 50, 
+       "C": 100, 
+       "D": 500, 
+       "M": 1000
+       }
+    valor = 0
+    ult_digito = 0
+    
+    for digito_rom in numeral[::-1]:             
+       valor_digito = mapa[digito_rom]
+       if valor_digito >= ult_digito:
+           valor += valor_digito
+           ult_digito = valor_digito
+       else:
+           valor -= valor_digito
+    return valor
         
 
 
