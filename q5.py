@@ -23,14 +23,14 @@
 # ```
 
 def q5(paths):
-    ComS = []
-    SemS = []
+    ComSaida = []
+    SemSaida = []
     for i, x in enumerate(paths):
-        ComS.append(paths[i][0])
-        for i, x in enumerate(paths):
-            if paths[i][1] not in ComS:
-                SemS.append(paths[i][1])
-    return SemS[0]
+        ComSaida.append(paths[i][0])
+    for i, x in enumerate(paths):
+        if paths[i][1] not in ComSaida:
+            SemSaida.append(paths[i][1])
+    return SemSaida[0]
 
 
 if __name__ == '__main__':
