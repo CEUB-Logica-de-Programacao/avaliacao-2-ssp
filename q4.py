@@ -34,9 +34,8 @@ def q4(numeral):
                 else:
                     val_int += val_rom[s[i]]
             return val_int
-
-    A = input('digite o número romano: ')
-    print(solução().romanointeiro(A))
+        A = input('digite o número romano: ')
+        print(solução().romanointeiro(A))
 
     pass
 
