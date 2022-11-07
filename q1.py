@@ -37,7 +37,6 @@ for j in range(len(lis_altura)):
         if lis_altura[j]<lis_altura[i]:
             lis_nome[i],lis_nome[j]=lis_nome[j],lis_nome[i]
 print(lis_nome)
-    pass
 
 if __name__ == '__main__':
     print(q1(["Mary", "John", "Emma"], [180, 165, 170]))
