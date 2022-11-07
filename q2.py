@@ -35,7 +35,7 @@ def q2(n):
 
 	s = 4
 	print(f"Números de formas de chegar ao topo = {maneiras(s)}",)
-    pass
+    	pass
 
 
 if __name__ == '__main__':
