@@ -18,10 +18,9 @@
 # Input: names = ["Alice","Bob","Bob"], heights = [155,185,150]
 # Output: ["Bob","Alice","Bob"]
 # ```
+
 lis_nome=[]
-
 lis_altura=[]
-
 while True:
     print("adicionar pesso--1")
     print('finalisar ---2')
